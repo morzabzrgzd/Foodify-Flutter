@@ -1,4 +1,4 @@
-# food_app_yt
+# Foodify App Flutter
 
 A new Flutter project.
 
