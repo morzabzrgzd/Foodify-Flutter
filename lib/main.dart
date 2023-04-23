@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:food_app_yt/constants/app_routes.dart';
+import 'package:food_app_yt/pages/onboarding/onborading_page.dart';
+import 'package:food_app_yt/pages/splash/splash_page.dart';
 import 'package:get/get.dart';
 
 void main() {
@@ -16,6 +19,17 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      initialRoute: AppRoutes.SPLASH_ROUTE,
+      getPages: [
+        GetPage(
+          name: AppRoutes.SPLASH_ROUTE,
+          page: () => const SplashPage(),
+        ),
+        GetPage(
+          name: AppRoutes.ONBORADING_ROUTE,
+          page: () => const OnboradingPage(),
+        ),
+      ],
     );
   }
 }
